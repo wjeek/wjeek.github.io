@@ -4,17 +4,10 @@ install:
   - npm install
 script:
   - npm run public
-after_script:
-  - git init
-  - git config user.name "wjeek"
-  - git config user.email "1248997541@qq.com"
-  - git add dist/
-  - git status
-  - git commit -m "Update docs"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" origin:master
-branches:
-  only:
-    - resume
-env:
- global:
-   - GH_REF: github.com/wjeek/wjeek.github.io.git
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token: GH_TOKEN
+  on:
+    branch: resume
+  local-dir: dist
