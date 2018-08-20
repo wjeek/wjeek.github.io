@@ -6,12 +6,12 @@
   "scripts": {
     "start": "gulp",
     "build": "NODE_ENV=production gulp",
-    "public": "rimraf resume && npm run build",
+    "public": "rm -rf dist && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/xiao555/Resume-it.git"
+    "url": "git://github.com/wjeek/wjeek.github.io.git"
   },
   "dependencies": {
     "jquery": "^3.1.1",
