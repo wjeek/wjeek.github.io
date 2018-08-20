@@ -7,7 +7,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github-token: GH_TOKEN
+  github-token: $GH_TOKEN
   on:
     branch: resume
   local-dir: dist
