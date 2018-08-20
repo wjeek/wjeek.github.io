@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "NODE_ENV=production gulp",
-    "public": "rimraf resume && npm run build && node public.js",
+    "public": "rimraf resume && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
